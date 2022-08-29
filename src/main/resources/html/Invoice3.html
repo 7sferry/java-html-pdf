@@ -1,0 +1,253 @@
+<!--~~~~~~~~~~~~~~~~~~~~~
+  ~ Made by [MR Ferry™] ~
+  ~ on Agustus 2022     ~
+  ~~~~~~~~~~~~~~~~~~~~~-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Invoice</title>
+	<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+</head>
+<body style="width: 21.59cm; height: 13.97cm;">
+<header>
+	<h1>Invoice</h1>
+	<address>
+		<p>Ferry Sikumbang</p>
+		<p>Jl. kaki no 26, Solok, 36373</p>
+		<p>(021) 200-0068</p>
+	</address>
+	<div>
+		<table class="meta">
+			<tr>
+				<th><span>Invoice #</span></th>
+				<td><span>101138</span></td>
+			</tr>
+			<tr>
+				<th><span>Date</span></th>
+				<td><span>1 January 2022</span></td>
+			</tr>
+			<tr>
+				<th><span>Amount Due</span></th>
+				<td><span id="prefix">$</span><span>600.00</span></td>
+			</tr>
+		</table>
+		<span class="pict"><img alt="logo" src="https://ferry.vercel.app/favicons/android-chrome-192x192.png"></span>
+	</div>
+</header>
+<article>
+	<table class="inventory">
+		<thead>
+		<tr>
+			<th><span>Item</span></th>
+			<th><span>Description</span></th>
+			<th><span>Rate</span></th>
+			<th><span>Quantity</span></th>
+			<th><span>Price</span></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><span>Front End Consultation</span></td>
+			<td><span>Experience Review</span></td>
+			<td><span>150.00</span></td>
+			<td><span>4</span></td>
+			<td><span>600.00</span></td>
+		</tr>
+		</tbody>
+	</table>
+	<table class="balance">
+		<tr>
+			<th><span>Total</span></th>
+			<td><span>600.00</span></td>
+		</tr>
+		<tr>
+			<th><span>Amount Paid</span></th>
+			<td><span>0.00</span></td>
+		</tr>
+		<tr>
+			<th><span>Balance Due</span></th>
+			<td><span>600.00</span></td>
+		</tr>
+	</table>
+</article>
+<aside>
+	<h1><span>Additional Notes</span></h1>
+	<div>
+		<p>A finance charge of 1.5% will be made on unpaid balances after 30 days.</p>
+	</div>
+</aside>
+</body>
+</html>
+
+<style>
+    @page {
+        margin: 0;
+    }
+
+    .pict {
+        width: 10%;
+	    max-width: 10%;
+        float: left;
+    }
+
+    h1 {
+        font: bold 100% sans-serif;
+        letter-spacing: 0.5em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    table {
+        font-size: 75%;
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 2px;
+    }
+
+    th, td {
+        border-width: 1px;
+        padding: 0.3em;
+        position: relative;
+        text-align: left;
+        border-radius: 0.25em;
+        border-style: solid;
+    }
+
+    th {
+        background: #EEE;
+        border-color: #BBB;
+    }
+
+    td {
+        border-color: #DDD;
+    }
+
+    html {
+        font: 16px/1 'Open Sans', sans-serif;
+        padding: 0.5in;
+    }
+
+    body {
+        box-sizing: border-box;
+        border-radius: 1px;
+    }
+
+    header h1 {
+        background: #000;
+        border-radius: 0.25em;
+        color: #FFF;
+        margin: 0 0 1em;
+        padding: 0.5em 0;
+    }
+
+    header div .meta {
+        float: left;
+        width: 40%;
+	    max-width: 40%;
+    }
+
+    header address {
+        float: left;
+        font-size: 75%;
+        font-style: normal;
+        width: 50%;
+	    max-width: 50%;
+    }
+
+    header span, header img {
+        display: block;
+        float: left;
+    }
+
+    header span {
+        max-height: 25%;
+        position: relative;
+    }
+
+    header img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    article h1 {
+        clip: rect(0 0 0 0);
+        position: absolute;
+    }
+
+    article address {
+        float: left;
+        font-size: 125%;
+        font-weight: bold;
+    }
+
+    table.meta, table.balance {
+        float: right;
+        width: 36%;
+    }
+
+    table.meta th {
+        width: 40%;
+    }
+
+    table.meta td {
+        width: 60%;
+    }
+
+    table.inventory {
+        clear: both;
+        width: 100%;
+    }
+
+    table.inventory th {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    table.inventory td:nth-child(1) {
+        width: 26%;
+    }
+
+    table.inventory td:nth-child(2) {
+        width: 38%;
+    }
+
+    table.inventory td:nth-child(3) {
+        text-align: right;
+        width: 12%;
+    }
+
+    table.inventory td:nth-child(4) {
+        text-align: right;
+        width: 12%;
+    }
+
+    table.inventory td:nth-child(5) {
+        text-align: right;
+        width: 12%;
+    }
+
+    table.balance th, table.balance td {
+        width: 50%;
+    }
+
+    table.balance td {
+        text-align: right;
+    }
+
+    aside h1 {
+        margin: 0 0 1em;
+        border: 0 none #999;
+        border-bottom: 1px solid;
+    }
+
+    article:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+</style>

@@ -14,66 +14,69 @@
 <body>
 <header>
 	<h1>Invoice</h1>
-	<address contenteditable>
+	<address>
 		<p>Ferry Sikumbang</p>
 		<p>Jl. kaki no 26<br>Solok, 36373</p>
 		<p>(021) 200-0068</p>
 	</address>
-	<span><img class="pict" alt="" src="https://ferry.vercel.app/favicons/android-chrome-192x192.png"></span>
+	<span><img class="pict" alt="logo" src="https://ferry.vercel.app/favicons/android-chrome-192x192.png"></span>
 </header>
 <article>
 	<table class="meta">
+		<thead></thead>
+		<tbody>
 		<tr>
-			<th><span contenteditable>Invoice #</span></th>
-			<td><span contenteditable>101138</span></td>
+			<th><span>Invoice #</span></th>
+			<td><span>101138</span></td>
 		</tr>
 		<tr>
-			<th><span contenteditable>Date</span></th>
-			<td><span contenteditable>January 1, 2012</span></td>
+			<th><span>Date</span></th>
+			<td><span>January 1, 2012</span></td>
 		</tr>
 		<tr>
-			<th><span contenteditable>Amount Due</span></th>
-			<td><span id="prefix" contenteditable>$</span><span>600.00</span></td>
+			<th><span>Amount Due</span></th>
+			<td><span id="prefix">$</span><span>600.00</span></td>
 		</tr>
+		</tbody>
 	</table>
 	<table class="inventory">
 		<thead>
 		<tr>
-			<th><span contenteditable>Item</span></th>
-			<th><span contenteditable>Description</span></th>
-			<th><span contenteditable>Rate</span></th>
-			<th><span contenteditable>Quantity</span></th>
-			<th><span contenteditable>Price</span></th>
+			<th><span>Item</span></th>
+			<th><span>Description</span></th>
+			<th><span>Rate</span></th>
+			<th><span>Quantity</span></th>
+			<th><span>Price</span></th>
 		</tr>
 		</thead>
 		<tbody>
 		<tr>
-			<td><span contenteditable>Front End Consultation</span></td>
-			<td><span contenteditable>Experience Review</span></td>
-			<td><span data-prefix>$</span><span contenteditable>150.00</span></td>
-			<td><span contenteditable>4</span></td>
+			<td><span>Front End Consultation</span></td>
+			<td><span>Experience Review</span></td>
+			<td><span data-prefix>$</span><span>150.00</span></td>
+			<td><span>4</span></td>
 			<td><span data-prefix>$</span><span>600.00</span></td>
 		</tr>
 		</tbody>
 	</table>
 	<table class="balance">
 		<tr>
-			<th><span contenteditable>Total</span></th>
+			<th><span>Total</span></th>
 			<td><span data-prefix>$</span><span>600.00</span></td>
 		</tr>
 		<tr>
-			<th><span contenteditable>Amount Paid</span></th>
-			<td><span data-prefix>$</span><span contenteditable>0.00</span></td>
+			<th><span>Amount Paid</span></th>
+			<td><span data-prefix>$</span><span>0.00</span></td>
 		</tr>
 		<tr>
-			<th><span contenteditable>Balance Due</span></th>
+			<th><span>Balance Due</span></th>
 			<td><span data-prefix>$</span><span>600.00</span></td>
 		</tr>
 	</table>
 </article>
 <aside>
-	<h1><span contenteditable>Additional Notes</span></h1>
-	<div contenteditable>
+	<h1><span>Additional Notes</span></h1>
+	<div>
 		<p>A finance charge of 1.5% will be made on unpaid balances after 30 days.</p>
 	</div>
 </aside>
@@ -83,17 +86,16 @@
 <style>
     /* reset */
     @page {
-        width: 21.59cm;
-        height:13.97cm;
+	    margin: 0;
     }
 
-    @media print {
-        html, body {
-            width: 21.59cm;
-            height:13.97cm;
-        }
-        /* ... the rest of the rules ... */
-    }
+    /*@media print {*/
+    /*    html, body {*/
+    /*        width: 21.59cm;*/
+    /*        height:13.97cm;*/
+    /*    }*/
+    /*    !* ... the rest of the rules ... *!*/
+    /*}*/
     * {
         border: 0;
         box-sizing: content-box;
@@ -171,23 +173,23 @@
 
     html {
         font: 16px/1 'Open Sans', sans-serif;
-        overflow: auto;
+        /*overflow: auto;*/
         padding: 0.5in;
     }
 
-    html {
-        background: #999;
-        cursor: default;
-    }
+    /*html {*/
+    /*    background: #999;*/
+    /*    cursor: default;*/
+    /*}*/
 
     body {
         box-sizing: border-box;
         /*height: 11in;*/
-        margin: 0 auto;
-        overflow: hidden;
-        padding: 0.5in;
+        /*margin: 0 auto;*/
+        /*overflow: hidden;*/
+        /*padding: 0.5in;*/
         width: 21.59cm;
-        /*height:13.97cm;*/
+        height:13.97cm;
 	    /*size: A5;*/
         /*margin-left:auto;*/
         /*margin-right:auto;*/
@@ -197,17 +199,17 @@
     body {
         background: #FFF;
         border-radius: 1px;
-        box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+        /*box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);*/
     }
 
     /* header */
 
     /*header { margin: 0 0 3em; }*/
-    header:after {
-        clear: both;
-        content: "";
-        display: table;
-    }
+    /*header:after {*/
+    /*    clear: both;*/
+    /*    content: "";*/
+    /*    display: table;*/
+    /*}*/
 
     header h1 {
         background: #000;
@@ -226,7 +228,7 @@
     }
 
     header address p {
-        margin: 0 0 0.25em;
+        /*margin: 0 0 0.25em;*/
     }
 
     header span, header img {
@@ -235,7 +237,7 @@
     }
 
     header span {
-        margin: 0 0 1em 1em;
+        /*margin: 0 0 1em 1em;*/
         max-height: 25%;
         max-width: 60%;
         position: relative;
@@ -260,7 +262,7 @@
     /* article */
 
     article, article address, table.meta, table.inventory {
-        margin: 0 0 3em;
+        /*margin: 0 0 3em;*/
     }
 
     article:after {
@@ -287,11 +289,11 @@
         width: 36%;
     }
 
-    table.meta:after, table.balance:after {
-        clear: both;
-        content: "";
-        display: table;
-    }
+    /*table.meta:after, table.balance:after {*/
+    /*    clear: both;*/
+    /*    content: "";*/
+    /*    display: table;*/
+    /*}*/
 
     /* table meta */
 
