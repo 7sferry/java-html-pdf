@@ -72,7 +72,7 @@ public class ThymeleafHtmlPdf implements MyHtmlPdf{
 		map.put("address", "Jl. kaki no 26, Solok, 36373");
 		map.put("phone", "(021) 200-0068");
 		map.put("items", items);
-		map.put("logo", "https://ferry.netlify.app/assets/img/me.png");
+		map.put("logo", "https://raw.githubusercontent.com/7sferry/FerResume/refs/heads/master/assets/img/me.png");
 		return map;
 	}
 
